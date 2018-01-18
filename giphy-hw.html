@@ -15,53 +15,32 @@
 
 <body>
 
-  <button data-pokemon="Pikachu">Pikachu
-  </button>
+<!-- Page wrapper-->
+<div id="page-wrapper">
+  
+  <!--Buttons rendered by the Javascript will be displayed here-->
+  <div id="rendered-buttons">
+  </div>
 
-  <button data-pokemon="Jigglypuff">Jigglypuff
-  </button>
-
-  <button data-pokemon="Charmander">Charmander
-  </button>
-
-  <button data-pokemon="Lugia">Lugia
-  </button>
-
-  <button data-pokemon="Umbreon">Umbreon
-  </button>
-
-  <button data-pokemon="Arcanine">Arcanine
-  </button>
-
-  <button data-pokemon="Togepei">Togepei
-  </button>
-
-  <button data-pokemon="Squirtle">Squirtle
-  </button>
-
-  <button data-pokemon="Ninetails">Ninetails
-  </button>
-
-  <button data-pokemon="Mewtwo">Mewtwo
-  </button>
-
-  <button data-pokemon="Gyarados">Gyarados
-  </button>
-
-  <button data-pokemon="Charizard">Charizard
-  </button>
-
-  <button data-pokemon="Cubone">Cubone
-  </button>
-
-  <button data-pokemon="Arbok">Arbok
-  </button>
-
-  <button data-pokemon="Torracat">Torracat
-  </button>
-
+  <!--Gifs called my the button clicks will be displayed here-->
   <div id="gifs-appear-here">
   </div>
+
+  <!--Form to create a new Pokemon button-->
+  <div id="add-pokemon">
+
+    <form id="pokemon-form">
+      <label for="pokemon-input">Add A Pokemon</label><br>
+      <input type="text" id="pokemon-input"><br>
+
+      <!-- Button triggers new movie to be added -->
+      <input id="add-pokemon" type="submit" value="Submit">
+    </form>
+
+  </div>
+
+<!--End of Page Wrapper div-->
+</div>
 
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery.js"></script>
