@@ -1,3 +1,11 @@
+body {
+	background-color: #000;
+	background-image: url("https://github.com/ericsteinman/Giphy-HW/blob/master/assets/Images/pokemon-background.png?raw=true");
+	background-size: 110%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
 #page-wrapper {
     width: 960px;
 	margin: 0 auto;
@@ -13,33 +21,56 @@
 	width: 250px;
 	float: right;
 	margin: 30px auto 30px auto;
-	padding: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
 	border-style: solid;
 	border-width: 5px;
-	border-color: #FFFF00;
-	background-color: #800000;
+	border-radius: 15px 50px;
+	border-color: #89ab77;
+	background-color: #a6d6f6;
 }
 
 #rendered-buttons {
 	margin: 30px auto 30px auto;
 }
 
-#add-pokemon, button {
+#add-pokemon {
 	font-family: 'VT323', monospace;
 	margin-top: 20px;
 	color: #fff;
 	font-size: 20px;
 	padding: 10px;
-	color: #ffffff;
 	background-color: #000;
 	border-width: 5px;
+	border-color: #fff;
 	border-radius: 25px;
+}
+
+button {
+	font-family: 'VT323', monospace;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+	background-color: #000;
+	border-width: 5px;
+	border-color: #fff;
+	border-radius: 25px;
+}
+
+#pokemon-input {
+	border-radius: 25px;
+	align-self: center;
+	padding: 5px;
 }
 
 h1 {
 	font-family: 'Bangers', cursive;
 	font-size: 80px;
-	color: #000;
+	color: #ffffff;
 	text-align: center;
 }
 
@@ -47,4 +78,10 @@ h2 {
 	font-family: 'VT323', monospace;
 	font-size: 30px;
 	color: #000;
+	padding: -20px;
+}
+
+.item {
+	float: right;
+	margin: 10px;
 }
