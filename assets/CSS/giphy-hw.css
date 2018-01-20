@@ -1,22 +1,36 @@
+/* Background Image */
 body {
-	background-color: #000;
 	background-image: url("https://github.com/ericsteinman/Giphy-HW/blob/master/assets/Images/pokemon-background.png?raw=true");
 	background-size: 110%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
 
+/* Wrapper that all divs are inside */
 #page-wrapper {
     width: 960px;
 	margin: 0 auto;
 }
 
+/* The div where the rendered buttons go. */
+#rendered-buttons {
+	margin: 30px auto 30px auto;
+}
+
+/* Div where the gifs appear */
 #gifs-appear-here {
 	float: left;
 	width: 630px;
 	margin: 30px auto 30px auto;
 }
 
+/* The actual gifs */
+.item {
+	float: right;
+	margin: 10px;
+}
+
+/* Div where the user enters a new Pokemon */
 #pokemon-panel {
 	width: 250px;
 	float: right;
@@ -30,10 +44,14 @@ body {
 	background-color: #a6d6f6;
 }
 
-#rendered-buttons {
-	margin: 30px auto 30px auto;
+/* Input box where the Pokemon name is typed */
+#pokemon-input {
+	border-radius: 25px;
+	align-self: center;
+	padding: 5px;
 }
 
+/* The button to add a Pokemon */
 #add-pokemon {
 	font-family: 'VT323', monospace;
 	margin-top: 20px;
@@ -46,6 +64,7 @@ body {
 	border-radius: 25px;
 }
 
+/* The buttons that appear with Pokemon names */
 button {
 	font-family: 'VT323', monospace;
 	margin-top: 10px;
@@ -61,12 +80,7 @@ button {
 	border-radius: 25px;
 }
 
-#pokemon-input {
-	border-radius: 25px;
-	align-self: center;
-	padding: 5px;
-}
-
+/* Headings */
 h1 {
 	font-family: 'Bangers', cursive;
 	font-size: 80px;
@@ -81,7 +95,7 @@ h2 {
 	padding: -20px;
 }
 
-.item {
-	float: right;
-	margin: 10px;
+/* The ratings */
+p {
+	font-family: 'VT323', monospace;
 }
