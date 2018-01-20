@@ -62,7 +62,7 @@ function displayGifs(){
   // After the data comes back from the API
   .done(function(response) {
       console.log(response);
-      // Clear the DIV so only the new GIFs appear in it.
+    // Clear the DIV so only the new GIFs appear in it.
 	  $("#gifs-appear-here").empty();
 	  // Is the response returns zero GIFs this alert will be displayed to the user.
 	  var results = response.data;
@@ -92,6 +92,8 @@ function displayGifs(){
           pokemonImage.attr("data-still",results[i].images.fixed_height_small_still.url);
           // The animated image of the gif.
           pokemonImage.attr("data-animate",results[i].images.fixed_height_small.url);
+          // Adding a 3px border to the image.
+          pokemonImage.attr("border", 3);
           // Setting the 'state' of the image.
           pokemonImage.attr("data-state", "animate");
           // Adding 'image' class tothe image.
